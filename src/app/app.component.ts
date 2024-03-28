@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lista-Ingrao';
+
+  hasError= true;
+
+  students= ['Lautaro Ingrao', 'Martin Prandi','Gonzalo Agustin','Morrones','Jimenez Fernando'];
+  
+  mostrarListado= false;
+
+  ocultarFrase= false;
+
+
+  alternarError() {
+    this.hasError = !this.hasError;
+  }
+  
 }
